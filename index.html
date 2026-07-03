@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub | Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <a href="index.html">StudentHub</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open navigation"><i class="fa-solid fa-bars"></i></button>
+      <nav class="main-nav">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <section class="hero reveal">
+        <div class="hero-copy">
+          <span class="eyebrow">Academic Portfolio</span>
+          <h1>Hi, I’m Adeola — a student building modern web experiences.</h1>
+          <p>Software engineering student at Miva Open University focused on responsive design, JavaScript interaction, and clean UI systems.</p>
+          <div class="hero-actions">
+            <a href="about.html" class="btn btn-primary">View Profile</a>
+            <a href="planner.html" class="btn btn-secondary">Open Planner</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="profile-card">
+            <img src="https://via.placeholder.com/320x320.png?text=Student+Photo" alt="Student profile photo">
+            <div class="profile-meta">
+              <h2>Adeola Olubodun</h2>
+              <p>Software Engineering Student</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-grid reveal">
+        <article class="stat-card">
+          <div>
+            <h3>Current GPA</h3>
+            <p class="stat-number count-up" data-target="3.82">0.00</p>
+          </div>
+          <i class="fa-solid fa-chart-line"></i>
+        </article>
+        <article class="stat-card">
+          <div>
+            <h3>Courses</h3>
+            <p class="stat-number count-up" data-target="8">0</p>
+          </div>
+          <i class="fa-solid fa-book-open"></i>
+        </article>
+        <article class="stat-card">
+          <div>
+            <h3>Projects</h3>
+            <p class="stat-number count-up" data-target="12">0</p>
+          </div>
+          <i class="fa-solid fa-laptop-code"></i>
+        </article>
+        <article class="stat-card">
+          <div>
+            <h3>Pending Tasks</h3>
+            <p class="stat-number count-up" data-target="5">0</p>
+          </div>
+          <i class="fa-solid fa-list-check"></i>
+        </article>
+      </section>
+
+      <section class="overview-grid reveal">
+        <article class="card wide-card">
+          <div class="card-heading">
+            <h2>Academic Performance</h2>
+            <button class="btn btn-small">View Report</button>
+          </div>
+          <div class="chart-placeholder">
+            <div class="chart-bar" style="width: 78%"></div>
+            <div class="chart-bar" style="width: 92%"></div>
+            <div class="chart-bar" style="width: 84%"></div>
+          </div>
+        </article>
+
+        <aside class="card side-card">
+          <div class="card-heading">
+            <h2>Upcoming Deadlines</h2>
+          </div>
+          <ul class="deadline-list">
+            <li>
+              <strong>COS 106 Project</strong>
+              <span>Due Tomorrow</span>
+            </li>
+            <li>
+              <strong>AWS Quiz</strong>
+              <span>Friday</span>
+            </li>
+            <li>
+              <strong>Database Assignment</strong>
+              <span>Monday</span>
+            </li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="quick-access reveal">
+        <div class="section-heading">
+          <h2>Quick Access</h2>
+          <p>Jump straight into the pages you use most.</p>
+        </div>
+        <div class="action-grid">
+          <a href="planner.html" class="action-card">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>Academic Planner</h3>
+            <p>Organize assignments, exams, and study sessions.</p>
+          </a>
+          <a href="projects.html" class="action-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Projects</h3>
+            <p>Review completed and upcoming portfolio work.</p>
+          </a>
+          <a href="about.html" class="action-card">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h3>About Me</h3>
+            <p>Read about my skills, education, and goals.</p>
+          </a>
+          <a href="contact.html" class="action-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Contact</h3>
+            <p>Send a message for collaboration or questions.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="projects-highlight reveal">
+        <div class="section-heading">
+          <h2>Featured Projects</h2>
+          <p>A selection of recent work demonstrating responsive design and JavaScript interaction.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="https://via.placeholder.com/520x300.png?text=StudentHub+Dashboard" alt="Dashboard project screenshot">
+            <div class="project-body">
+              <h3>StudentHub Dashboard</h3>
+              <p>A clean academic dashboard created with HTML, CSS and JavaScript featuring stats, cards, and navigation.</p>
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="project-links"><a href="#">Live Demo</a><a href="#">GitHub</a></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="https://via.placeholder.com/520x300.png?text=Planner+App" alt="Task planner screenshot">
+            <div class="project-body">
+              <h3>Academic Planner</h3>
+              <p>An interactive planner that adds tasks, marks completion, and uses local storage for persistence.</p>
+              <div class="project-tags"><span>JavaScript</span><span>DOM</span><span>UX</span></div>
+              <div class="project-links"><a href="#">Live Demo</a><a href="#">GitHub</a></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="https://via.placeholder.com/520x300.png?text=Project+Portfolio" alt="Project showcase screenshot">
+            <div class="project-body">
+              <h3>Portfolio Showcase</h3>
+              <p>A portfolio page built with semantic HTML and responsive layout to highlight academic achievements.</p>
+              <div class="project-tags"><span>Responsive</span><span>Design</span><span>Projects</span></div>
+              <div class="project-links"><a href="#">Live Demo</a><a href="#">GitHub</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer reveal">
+      <p>© 2026 Adeola Olubodun. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Email</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>

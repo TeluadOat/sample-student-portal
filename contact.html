@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <a href="index.html">StudentHub</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open navigation"><i class="fa-solid fa-bars"></i></button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <section class="page-hero reveal">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h1>Send a message about collaboration, projects, or academic questions.</h1>
+          <p>Use the form below for reliable client-side validation before sending your request.</p>
+        </div>
+        <img src="https://via.placeholder.com/420x420.png?text=Contact" alt="Contact illustration">
+      </section>
+
+      <section class="card contact-card reveal">
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+            <small class="error-message"></small>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            <small class="error-message"></small>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="08012345678" required>
+            <small class="error-message"></small>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+            <small class="error-message"></small>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="form-feedback" class="form-feedback"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer reveal">
+      <p>© 2026 Adeola Olubodun. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</body>
+
+</html>
