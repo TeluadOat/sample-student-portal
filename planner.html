@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub | Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <a href="index.html">StudentHub</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open navigation"><i class="fa-solid fa-bars"></i></button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li class="active"><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <section class="page-hero reveal">
+        <div>
+          <span class="eyebrow">Academic Planner</span>
+          <h1>Track tasks, mark completion, and keep your study schedule on track.</h1>
+          <p>The planner updates in real time and saves tasks to local storage so your work stays available during the semester.</p>
+        </div>
+        <img src="https://via.placeholder.com/420x420.png?text=Planner" alt="Academic planner illustration">
+      </section>
+
+      <section class="card planner-card reveal">
+        <div class="planner-header">
+          <div>
+            <h2>Task Manager</h2>
+            <p>Add a task, choose a due date, and use the controls to mark completion or delete items.</p>
+          </div>
+          <div class="status-summary" id="planner-summary">
+            <div><strong id="total-count">0</strong><span>Total</span></div>
+            <div><strong id="completed-count">0</strong><span>Completed</span></div>
+            <div><strong id="remaining-count">0</strong><span>Remaining</span></div>
+          </div>
+        </div>
+
+        <form id="task-form" class="task-form">
+          <div class="form-row">
+            <label for="task-title">Task</label>
+            <input id="task-title" name="taskTitle" type="text" placeholder="Enter task name" required>
+          </div>
+          <div class="form-row">
+            <label for="task-course">Course</label>
+            <input id="task-course" name="taskCourse" type="text" placeholder="e.g. COS 106" required>
+          </div>
+          <div class="form-row">
+            <label for="task-date">Due Date</label>
+            <input id="task-date" name="taskDate" type="date" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Add Task</button>
+        </form>
+
+        <div class="task-controls">
+          <button type="button" class="btn btn-secondary" data-filter="all">All</button>
+          <button type="button" class="btn btn-secondary" data-filter="active">Active</button>
+          <button type="button" class="btn btn-secondary" data-filter="completed">Completed</button>
+        </div>
+
+        <ul id="task-list" class="task-list"></ul>
+      </section>
+    </main>
+
+    <footer class="site-footer reveal">
+      <p>© 2026 Adeola Olubodun. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/planner.js" defer></script>
+</body>
+
+</html>
