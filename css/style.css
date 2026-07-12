@@ -604,6 +604,12 @@ tbody tr {
   transform: translateY(0);
 }
 
+
+/* additions i could remove anytime */
+.mail {
+  color: var(--primary);
+}
+
 @media (max-width: 1024px) {
 
   .stats-grid,
@@ -682,5 +688,9 @@ tbody tr {
 
   .project-card img {
     width: 100%;
+  }
+
+  .site-footer:has(.footer-links) {
+    flex-direction: column-reverse;
   }
 }
