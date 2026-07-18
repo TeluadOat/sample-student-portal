@@ -57,7 +57,7 @@ const renderTasks = () => {
 
   if (visibleTasks.length === 0) {
     const empty = document.createElement('p');
-    empty.textContent = 'No tasks found for this filter.';
+    empty.textContent = 'No tasks found for this category.';
     empty.style.color = 'var(--muted)';
     taskList.appendChild(empty);
   }

@@ -237,7 +237,7 @@ textarea {
 .project-card {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .stat-card:hover,
