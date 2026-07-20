@@ -54,12 +54,55 @@ const revealOnScroll = () => {
   });
 };
 
+const initVideoCards = () => {
+  document.querySelectorAll('.video-card').forEach((card) => {
+    const shell = card.querySelector('.video-shell');
+    const video = card.querySelector('.video-player');
+    const toggle = card.querySelector('.video-toggle');
+
+    if (!shell || !video || !toggle) return;
+
+    const updateToggle = () => {
+      const icon = toggle.querySelector('i');
+      const isPlaying = !video.paused;
+
+      shell.classList.toggle('is-playing', isPlaying);
+      toggle.setAttribute('aria-label', isPlaying ? 'Pause video' : 'Play video');
+
+      if (icon) {
+        icon.className = isPlaying ? 'fa-solid fa-pause' : 'fa-solid fa-play';
+      }
+    };
+
+    toggle.addEventListener('click', async () => {
+      if (video.paused) {
+        try {
+          await video.play();
+        } catch (error) {
+          console.warn('Video playback failed:', error);
+        }
+      } else {
+        video.pause();
+      }
+
+      updateToggle();
+    });
+
+    video.addEventListener('play', updateToggle);
+    video.addEventListener('pause', updateToggle);
+    video.addEventListener('ended', updateToggle);
+
+    updateToggle();
+  });
+};
+
 const init = () => {
   if (navToggle) {
     navToggle.addEventListener('click', toggleNavigation);
   }
   animateCounters();
   revealOnScroll();
+  initVideoCards();
 };
 
 window.addEventListener('DOMContentLoaded', init);
